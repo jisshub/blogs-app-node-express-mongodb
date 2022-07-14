@@ -4,7 +4,8 @@ const BlogSchema = new mongoose.Schema({
     title: {
         type: String,
         required: [true, 'please add a title'],
-        trim: true
+        trim: true,
+        maxlength: 50
     },
     body: {
         type: String,
