@@ -1,5 +1,12 @@
 # blogs-app-node-express-mongodb
 
+## Functionalities of App
+
+- Perform CRUD operations for blogs and comments api's.
+- Admin API to protect the blogs create, update and delete operations.
+- Authentication using json web token.
+- Unauthorized access to the blogs create, edit and update is blocked.
+
 ## Install Dependencies
 
 ```sh
@@ -18,15 +25,9 @@ npm run dev
 npm start
 ```
 
-## Test Server Connection
-
-```API
-http://localhost:3000
-```
-
-
 ## API Requests
 ### Blogs
+
 ```API
 Get all Blogs - GET http://localhost:3000/api/v1/blogs/ 
 Get Single Blog - GET http://localhost:3000/api/v1/blogs/:id
@@ -66,7 +67,6 @@ Login Admin - POST http://localhost:3000/api/v1/auth/login
 **Note:**
 
 - Password minimum 6 characters.
-- Sample admin credential given in file `_data/admin.json` file.
 
     [Admin Sample Data](https://github.com/jisshub/blogs-app-node-express-mongodb/blob/main/_data/admin.json)
 
@@ -84,8 +84,6 @@ Login Admin - POST http://localhost:3000/api/v1/auth/login
 
 Postman Collection is located in root folder.
 
-File Name: `Blogs API.postman_collection.json`
-
 [Postman Collection](https://github.com/jisshub/blogs-app-node-express-mongodb/blob/main/Blogs%20API.postman_collection.json)
 
-
+**[⬆ Back to Top](#blogs-app-node-express-mongodb)**
