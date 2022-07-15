@@ -1,26 +1,33 @@
 # blogs-app-node-express-mongodb
 
-### Install Dependencies
+## Install Dependencies
 
 ```sh
 npm install
 ```
 
-### Run node server in development mode
+## Run node server in development mode
 
 ```sh
 npm run dev
 ```
 
-### Run node server in production mode
+## Run node server in production mode
 
 ```sh
 npm start
 ```
 
+## Test Server Connection
+
+```API
+http://localhost:3000
+```
+
+
 ## API Requests
 ### Blogs
-```sh
+```API
 Get all Blogs - GET http://localhost:3000/api/v1/blogs/ 
 Get Single Blog - GET http://localhost:3000/api/v1/blogs/:id
 Create Blog - POST http://localhost:3000/api/v1/blogs
@@ -29,7 +36,7 @@ Delete Blog - DELETE http://localhost:3000/api/v1/blogs/:id
 ```
 ### Comments
 
-```sh
+```API
 Get All Comments - GET http://localhost:3000/api/v1/comments/
 Get Comments of a Blog - GET http://localhost:3000/api/v1/blogs/:blogId/comments/
 Create Comment - POST http://localhost:3000/api/v1/blogs/:blogId/comments/
@@ -37,12 +44,12 @@ Create Comment - POST http://localhost:3000/api/v1/blogs/:blogId/comments/
 
 ### Admin
 
-```sh
+```API
 Register Admin - POST http://localhost:3000/api/v1/auth/register
 Login Admin - POST http://localhost:3000/api/v1/auth/login
 ```
 
-### Admin Register Sample
+## Admin Register Sample
 
 ```json
 {
@@ -60,7 +67,7 @@ Login Admin - POST http://localhost:3000/api/v1/auth/login
     admin.json[_data/admin.json]
 
 
-### Admin Login Sample
+## Admin Login Sample
 
 ```json
 {
@@ -68,3 +75,12 @@ Login Admin - POST http://localhost:3000/api/v1/auth/login
     "password": "password"
 }
 ```
+
+## Postman Collection
+
+Postman Collection is located in root folder.
+
+File Name: `Blogs API.postman_collection.json`
+
+
+
