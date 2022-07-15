@@ -64,7 +64,7 @@ Login Admin - POST http://localhost:3000/api/v1/auth/login
 - Password minimum 6 characters.
 - Sample admin credential given in file `_data/admin.json` file.
 
-    admin.json[_data/admin.json]
+    [Admin Sample Data](_data/admin.json])
 
 
 ## Admin Login Sample
