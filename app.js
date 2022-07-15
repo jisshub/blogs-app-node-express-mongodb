@@ -8,6 +8,7 @@ const hpp = require('hpp');
 
 const blogs = require('./routes/blog');
 const comments = require('./routes/comments');
+const auth = require('./routes/auth');
 
 const errorHandler = require('./middlewares/error');
 
@@ -22,6 +23,7 @@ app.use(hpp());
 
 app.use('/api/v1/blogs', blogs);
 app.use('/api/v1/comments', comments);
+app.use('/api/v1/auth', auth);
 
 app.use(errorHandler);
 
