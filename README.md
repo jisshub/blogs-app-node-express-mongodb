@@ -6,6 +6,7 @@
 - Admin API to protect the blogs create, update and delete operations.
 - Authentication using json web token.
 - Unauthorized access to the blogs create, edit and update is blocked.
+- Listing comments for a particular blog.
 
 ## Install Dependencies
 
