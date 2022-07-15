@@ -64,7 +64,7 @@ Login Admin - POST http://localhost:3000/api/v1/auth/login
 - Password minimum 6 characters.
 - Sample admin credential given in file `_data/admin.json` file.
 
-    [Admin Sample Data](_data/admin.json])
+    [Admin Sample Data](https://github.com/jisshub/blogs-app-node-express-mongodb/blob/main/_data/admin.json])
 
 
 ## Admin Login Sample
