@@ -10,7 +10,7 @@ exports.getComments = asyncHandler(async (req, res, next) => {
     if (req.params.blogId) {
         query = Comment.find({ blog: req.params.blogId });
     } else {
-        query = Comment.find().populate('title body');
+        query = Comment.find().populate('blog', 'title body');
     }
     const comments = await query;
     res.status(200).json({
