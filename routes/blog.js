@@ -3,18 +3,20 @@ const router = express.Router()
 
 const { getBlogs, getSingleBlog, createBlog, updateBlog, deleteBlog } = require('../controllers/blog');
 
+const { protect } = require('../middlewares/auth');
+
 const commentRouter = require('../routes/comments');
 
 router.use('/:blogId/comments', commentRouter);
 
 router.route('/')
     .get(getBlogs)
-    .post(createBlog);
+    .post(protect, createBlog);
 
 router.route('/:id')
     .get(getSingleBlog)
-    .put(updateBlog)
-    .delete(deleteBlog);
+    .put(protect, updateBlog)
+    .delete(protect, deleteBlog);
 
 
 module.exports = router;

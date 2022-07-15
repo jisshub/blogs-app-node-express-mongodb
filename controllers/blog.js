@@ -7,7 +7,6 @@ const path = require('path');
 // @route  GET /api/v1/blogs
 exports.getBlogs = asyncHandler(async (req, res, next) => {
     const blogs = await Blog.find();
-    console.log(blogs);
     res.status(200).json({
         success: true,
         count: blogs.length,

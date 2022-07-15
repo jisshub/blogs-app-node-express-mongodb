@@ -2,9 +2,9 @@ const express = require('express');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const morgan = require('morgan');
-const path = require('path');
 const cors = require('cors');
 const hpp = require('hpp');
+const cookieParser = require('cookie-parser');
 
 const blogs = require('./routes/blog');
 const comments = require('./routes/comments');
@@ -20,6 +20,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(hpp());
+app.use(cookieParser());
 
 app.use('/api/v1/blogs', blogs);
 app.use('/api/v1/comments', comments);

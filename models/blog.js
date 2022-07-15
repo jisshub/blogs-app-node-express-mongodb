@@ -19,11 +19,4 @@ const BlogSchema = new mongoose.Schema({
     }
 });
 
-// BlogSchema.pre('save', function (next) {
-//     this.slug = slugify(this.title, { lower: true });
-//     next();
-//     console.log(this.slug);
-//     next();
-// })
-
 module.exports = mongoose.model('Blog', BlogSchema);
