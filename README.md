@@ -82,5 +82,6 @@ Postman Collection is located in root folder.
 
 File Name: `Blogs API.postman_collection.json`
 
+[Postman Collection](https://github.com/jisshub/blogs-app-node-express-mongodb/blob/main/Blogs%20API.postman_collection.json)
 
 
