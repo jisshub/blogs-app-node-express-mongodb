@@ -24,11 +24,7 @@ exports.getComments = asyncHandler(async (req, res, next) => {
 // @route - POST api/v1/blogs/:blogId/comments
 exports.createComment = asyncHandler(async (req, res, next) => {
     req.body.blog = req.params.blogId;
-
-    // find blog by id
     const blog = await Blog.findById(req.params.blogId);
-
-    // check blog exist/not
     if(!blog) {
         return next(new ErrorResponse(`Blog not found with id of ${req.params.blogId}`, 404));
     }
