@@ -34,6 +34,8 @@ Create Blog - POST http://localhost:3000/api/v1/blogs
 Update Blog - PUT http://localhost:3000/api/v1/blogs/:id
 Delete Blog - DELETE http://localhost:3000/api/v1/blogs/:id
 ```
+
+[Blogs Sample Data](https://github.com/jisshub/blogs-app-node-express-mongodb/blob/main/_data/blogs.json)
 ### Comments
 
 ```API
@@ -41,6 +43,8 @@ Get All Comments - GET http://localhost:3000/api/v1/comments/
 Get Comments of a Blog - GET http://localhost:3000/api/v1/blogs/:blogId/comments/
 Create Comment - POST http://localhost:3000/api/v1/blogs/:blogId/comments/
 ```
+
+[Comments Sample Data](https://github.com/jisshub/blogs-app-node-express-mongodb/blob/main/_data/comments.json)
 
 ### Admin
 
