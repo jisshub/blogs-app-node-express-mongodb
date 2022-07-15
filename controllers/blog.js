@@ -7,17 +7,11 @@ const path = require('path');
 // @route  GET /api/v1/blogs
 exports.getBlogs = asyncHandler(async (req, res, next) => {
     const blogs = await Blog.find();
+    console.log(blogs);
     res.status(200).json({
         success: true,
         count: blogs.length,
-        // Note: truncate the body to 100 characters
-        data: blogs.map(() => {
-            return {
-                title: blog.title,
-                body: blog.body,
-                createdAt: blog.createdAt,
-            }
-        })
+        data: blogs
     });
 });
 
